@@ -1,0 +1,120 @@
+:root {
+    --color-main: rgb(17, 22, 36);
+    --color-secondary: rgb(24, 31, 56);
+    --color-accent: rgb(22, 93, 253);
+    --color-text-background: rgb(24, 31, 56)
+}
+body {
+    background-color: var(--color-main);
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: white;
+}
+.page {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    /* align-items: center; */
+}
+.search-bar-container {
+    display: flex;
+    align-items: center;
+    width: 340px;
+    /* margin: auto; */
+    background-color: var(--color-text-background);
+    border-radius: 10px;
+    margin-top: 30px;
+}
+.search-icon {
+    color: var(--color-accent);
+    margin-left: 15px;
+}
+.search-input {
+    padding: 20px 2px;
+    background-color: var(--color-text-background);
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    width: 200px;
+    font-weight: 300;
+    margin-left: 10px;
+    font-size: 12px;
+}
+.search-input:focus {
+    outline: none;
+}
+.search-input:focus::placeholder {
+    color: transparent;
+  }
+.search-input {
+    caret-color: white;
+  }
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: white;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+color: white;
+}
+.search-button {
+    background-color: var(--color-accent);
+    border: none;
+    border-radius: 10px;;
+    color: white;
+    height: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    padding: 0px 15px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.user-card {
+    width: 300px;
+    height: 73.5px;
+    margin: 15px auto;
+    background-color: var(--color-text-background);
+    border-radius: 10px;
+    padding: 40px 20px;
+}
+.title-section {
+    display: none;
+}
+.avatar-container {
+    width: 70px;
+    height: 70px;
+    /* position: relative; */
+    overflow: hidden;
+    border-radius: 50%;
+}
+#avatar-img {
+    /* display: inline; */
+    /* margin: 0 auto; */
+    height: 100%;
+    /* width: auto; */
+}
+.name-section {
+    margin-left: 25px;
+    display: grid;
+    grid-template-rows: 1.5fr 1fr 1fr;
+}
+#user-display-name {
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+#username a, 
+#username a:visited,
+#username a:hover,
+#username a:active {
+    color: var(--color-accent);
+    text-decoration: none;
+}
+#username, #user-created-date {
+    font-weight: 300;
+}
+

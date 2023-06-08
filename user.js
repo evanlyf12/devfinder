@@ -21,6 +21,7 @@ function getInputValueByClassName(className) {
 }
 
 function populateUserPanel(userData) {
+  document.getElementsByClassName("inspo-container")[0].style.display = "none";
   document.getElementsByClassName("title-section")[0].style.display = "flex";
   document.getElementById("avatar-img").setAttribute("src", userData.avatar_url);
   document.getElementById("user-display-name").innerHTML = userData.name ? userData.name : "'Name Not Specified'";
@@ -32,6 +33,7 @@ function populateUserPanel(userData) {
 }
 
 function populateNoUserFound() {
+  document.getElementsByClassName("inspo-container")[0].style.display = "none";
   document.getElementsByClassName("user-card")[0].style.cssText = "display: flex; justify-content: center; align-items: center;";
   
   document.getElementsByClassName("no-user-found")[0].innerHTML = "No User Found 😕";

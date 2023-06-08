@@ -63,7 +63,6 @@ body {
     width: 200px;
     font-weight: 300;
     margin-left: 10px;
-    font-size: 12px;
 }
 .search-input:focus {
     outline: none;
@@ -91,7 +90,6 @@ color: white;
     color: white;
     height: 40px;
     font-family: 'Poppins', sans-serif;
-    font-size: 12px;
     padding: 0px 15px;
     margin-right: 5px;
     cursor: pointer;
